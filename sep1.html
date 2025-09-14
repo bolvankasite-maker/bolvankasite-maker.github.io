@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артур пирожков</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .header {
+            padding: 30px;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .content {
+            padding: 25px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #f0f0f0;
+            padding: 20px;
+            font-style: italic;
+            border-top: 2px solid #3cff00;
+        }
+        @media (max-width: 768px) {
+            .header {
+                font-size: 2rem;
+                padding: 20px;
+            }
+            .images img {
+                width: 120px;
+                height: 80px;
+            }
+            .message {
+                font-size: 1rem;
+            }
+        }
+        /* Анимации */
+        @keyframes float {
+            0%, 100% { top: -10px; }
+            50% { top: -60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            С Днем знаний!<br>
+            1 сентября!
+        </div>
+        <div class="content">
+            <div class="images">
+                <img src="egg-artur-piroskov.webp" alt="🌹" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+>
+
+
+
+

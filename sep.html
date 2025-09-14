@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытка на 1 сентября</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #87CEEB, #FFFFE0);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .card {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+        }
+        .header {
+            background: linear-gradient(135deg, #4ffff6, #82ff69);
+            padding: 30px;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .content {
+            padding: 25px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #3cff00;
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #f0f0f0;
+            padding: 20px;
+            font-style: italic;
+            border-top: 2px solid #3cff00;
+        }
+        @media (max-width: 768px) {
+            .header {
+                font-size: 2rem;
+                padding: 20px;
+            }
+            .images img {
+                width: 120px;
+                height: 80px;
+            }
+            .message {
+                font-size: 1rem;
+            }
+        }
+        /* Анимации */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: #3cff00;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { top: -10px; }
+            50% { top: -60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            С Днем знаний!<br>
+            1 сентября!
+        </div>
+        <div class="content">
+            <div class="images">
+                <img src="School-group-site.webp" alt="🌹" />
+                <img src="School-house-site.webp" alt="🌹" />
+                <img src="School-rose-site.webp" alt="🌹" />
+            </div>
+            <div class="message">
+                <p>Дорогие друзья!</p>
+                <p>Поздравляю вас с первым сентября! Пусть новый учебный год принесет много знаний, интересных открытий, веселых уроков и верных друзей. Желаю отличных оценок, творческих успехов и незабываемых воспоминаний. Будьте здоровы, умны и счастливы!</p>
+                <p>С наилучшими пожеланиями,<br>Ваш Артур Пирожков</p>
+            </div>
+            <a href="sep1.html">БУ</a>
+        </div>
+        <div class="footer">
+            © 2025 Открытка на 1 сентября. Сделано с помоью GPTChat76.
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
